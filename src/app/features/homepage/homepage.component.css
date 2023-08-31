@@ -1,9 +1,8 @@
 main {
-  height: 500px;
+  height: 400px;
   margin-top: 100px;
   width: 100%;
-  background: url("../../../assets/images/home-page/background-home.png")
-    no-repeat center center;
+  background: url("../../../assets/images/home-page/background-home.png") no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;

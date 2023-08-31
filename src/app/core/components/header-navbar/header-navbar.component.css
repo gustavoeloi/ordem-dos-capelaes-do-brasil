@@ -7,6 +7,7 @@ header {
   padding: 1.25rem 0;
   background: linear-gradient(#bc1313, #d80707);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16);
+  z-index: 100;
 }
 
 nav {
@@ -33,7 +34,7 @@ header li a {
   transition: 0.2s ease-out;
 }
 
-header li + li {
+header li+li {
   margin-left: 2rem;
 }
 

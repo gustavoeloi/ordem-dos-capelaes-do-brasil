@@ -12,6 +12,11 @@ import { ContatopageComponent } from './features/contatopage/contatopage.compone
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { ComponenteCapelaniasComponent } from './features/homepage/componente-capelanias/componente-capelanias.component';
+import { MatCardModule } from '@angular/material/card';
+import { ComponenteCursosAgendadosComponent } from './features/homepage/componente-cursos-agendados/componente-cursos-agendados.component';
+import { MatDividerModule } from '@angular/material/divider';
+import { ComponenteGaleriaFotosComponent } from './features/homepage/componente-galeria-fotos/componente-galeria-fotos.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +27,9 @@ import { MatIconModule } from '@angular/material/icon';
     SobrepageComponent,
     CursospageComponent,
     ContatopageComponent,
+    ComponenteCapelaniasComponent,
+    ComponenteCursosAgendadosComponent,
+    ComponenteGaleriaFotosComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +37,8 @@ import { MatIconModule } from '@angular/material/icon';
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
+    MatCardModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

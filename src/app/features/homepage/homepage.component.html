@@ -1,11 +1,14 @@
 <main>
   <div class="container">
     <img [src]="pathImageMain" alt="Imagem Logo da OCEB">
-    <h1>Ordem dos Capelães Evangélicos do Brasil</h1>
+    <h1>Ordem dos Capelães<br>Evangélicos do Brasil</h1>
     <p>"Porque sabemos o valor de uma alma"</p>
-    <button mat-fab extended color="warn" routerLink="/contato">
-      <mat-icon>schedule</mat-icon>
-      <span class="btn-text">Agendar</span>
+    <button mat-raised-button color="warn" routerLink="/contato">
+      <mat-icon>event</mat-icon>
+      <span class="btn-cta">Agendar</span>
     </button>
   </div>
 </main>
+<app-componente-capelanias></app-componente-capelanias>
+<app-componente-cursos-agendados></app-componente-cursos-agendados>
+<app-componente-galeria-fotos></app-componente-galeria-fotos>

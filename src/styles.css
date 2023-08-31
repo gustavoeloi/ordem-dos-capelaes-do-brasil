@@ -4,6 +4,7 @@ html,
 body {
   height: 100%;
 }
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -23,7 +24,16 @@ h1 {
   line-height: 1.2;
 }
 
-.btn-text {
+h3 {
+  font-size: 1.5rem;
+  color: #d80707;
+  text-align: center;
   text-transform: uppercase;
-  font-size: 1.125rem;
+}
+
+.btn-cta {
+  margin: 1.2rem;
+  width: 300px;
+  padding: 1.5rem;
+  text-transform: uppercase;
 }

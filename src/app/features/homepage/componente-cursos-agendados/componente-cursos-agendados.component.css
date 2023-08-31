@@ -1,0 +1,14 @@
+.section-cursos-agendados {
+  padding: 3rem 0;
+  background: #DCDDDE;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-cursos-agendados {
+  max-width: 370px;
+}
