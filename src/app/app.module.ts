@@ -17,6 +17,8 @@ import { MatCardModule } from '@angular/material/card';
 import { ComponenteCursosAgendadosComponent } from './features/homepage/componente-cursos-agendados/componente-cursos-agendados.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { ComponenteGaleriaFotosComponent } from './features/homepage/componente-galeria-fotos/componente-galeria-fotos.component';
+import { ComponenteSobreHomeComponent } from './features/homepage/componente-sobre-home/componente-sobre-home.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { ComponenteGaleriaFotosComponent } from './features/homepage/componente-
     ComponenteCapelaniasComponent,
     ComponenteCursosAgendadosComponent,
     ComponenteGaleriaFotosComponent,
+    ComponenteSobreHomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ import { ComponenteGaleriaFotosComponent } from './features/homepage/componente-
     MatIconModule,
     MatCardModule,
     MatDividerModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

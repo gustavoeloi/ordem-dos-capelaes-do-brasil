@@ -23,12 +23,6 @@
   padding: 1.2rem;
 }
 
-.div-btn {
-  display: flex;
-  justify-content: center;
-  margin-top: 1.5rem;
-}
-
 .card-text-link {
-  color: #404A52;
+  color: #404a52;
 }

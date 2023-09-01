@@ -1,0 +1,10 @@
+.galeria-fotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.galeria-fotos img {
+  max-width: 580px;
+  border-radius: 5px;
+}

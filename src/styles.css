@@ -7,6 +7,7 @@ body {
 
 body {
   margin: 0;
+  padding: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
@@ -31,9 +32,22 @@ h3 {
   text-transform: uppercase;
 }
 
+li,
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .btn-cta {
   margin: 1.2rem;
   width: 300px;
   padding: 1.5rem;
   text-transform: uppercase;
+}
+
+.div-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
 }
