@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./sobrepage.component.css']
 })
 export class SobrepageComponent {
-
+  pathMissao = '../../../assets/images/sobre-page/missao.png';
+  pathVisao = '../../../assets/images/sobre-page/visao.png';
+  pathValores = '../../../assets/images/sobre-page/valores.png';
 }
