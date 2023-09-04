@@ -34,7 +34,7 @@ header li a {
   transition: 0.2s ease-out;
 }
 
-header li+li {
+header li + li {
   margin-left: 2rem;
 }
 

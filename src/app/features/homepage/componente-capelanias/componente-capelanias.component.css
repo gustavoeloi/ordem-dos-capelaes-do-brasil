@@ -3,8 +3,11 @@
 }
 
 .card-container {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .card-capelania {
@@ -25,4 +28,25 @@
 
 .card-text-link {
   color: #404a52;
+}
+
+/* Medias Querias */
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .card-capelania {
+    max-width: 340px;
+  }
+
+  .card-title {
+    font-size: 0.9rem;
+  }
+
+  .card-capelania p {
+    font-size: 0.8rem;
+  }
 }

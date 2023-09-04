@@ -8,10 +8,12 @@
 }
 
 .descricao-oceb {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  justify-items: center;
   gap: 2rem;
+  padding: 0 1rem;
 }
 
 .descricao-oceb p {
@@ -49,4 +51,22 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media (max-width: 768px) {
+  .descricao-oceb img {
+    width: 200px;
+  }
+
+  .descricao-oceb p {
+    font-size: 0.9rem;
+  }
+
+  .descricao-quote p {
+    font-size: 1rem;
+  }
+
+  .descricao-quote span {
+    font-size: 1rem;
+  }
 }
