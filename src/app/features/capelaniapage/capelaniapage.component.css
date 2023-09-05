@@ -2,22 +2,16 @@ main {
   height: 400px;
   margin-top: 80px;
   width: 100%;
-  background: url("../../../assets/images/home-page/background-home.png")
+  background: url("../../../assets/images/capelania-page/capelania-background.png")
     no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 main p {
-  font-size: 1.125rem;
   font-style: italic;
-  margin-top: 1rem;
-}
-
-.cor-brackground {
-  background: #dcddde;
 }

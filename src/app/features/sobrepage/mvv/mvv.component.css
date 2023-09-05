@@ -1,0 +1,50 @@
+.section-mvv {
+  background: #d90000;
+}
+
+.mvv {
+  padding: 4rem;
+}
+
+.card-mvv {
+  padding: 1rem;
+  max-width: 370px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #d90000;
+  text-align: center;
+}
+
+.card-img {
+  max-width: 32px;
+  margin: 0 auto;
+}
+
+.card-content {
+  color: #404a52;
+  font-size: 0.875rem;
+  text-align: center;
+  margin-top: 0.875rem;
+}
+
+.cards-mvv-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .cards-mvv-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card-mvv {
+    max-width: 300px;
+  }
+}

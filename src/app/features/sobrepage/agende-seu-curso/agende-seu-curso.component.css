@@ -1,0 +1,18 @@
+.section-agende-seu-curso {
+  background: url("../../../../assets/images/sobre-page/pagina-cte-sobre.jpg")
+    no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+
+.agende-seu-curso {
+  padding: 4rem 0;
+}
+
+.agende-seu-curso p {
+  text-align: center;
+}
+
+.title-agende-seu-curso {
+  color: #fff;
+}

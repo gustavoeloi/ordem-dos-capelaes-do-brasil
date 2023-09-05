@@ -52,6 +52,10 @@ ul {
   margin-top: 1.5rem;
 }
 
+.cor-de-fundo-branco {
+  background-color: #fff;
+}
+
 /* Media Queries */
 
 /* Dispositivos pequenos (telefones) de até 768px de largura */

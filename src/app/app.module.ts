@@ -7,7 +7,6 @@ import { HeaderNavbarComponent } from './core/components/header-navbar/header-na
 import { FooterComponent } from './core/components/footer/footer.component';
 import { HomepageComponent } from './features/homepage/homepage.component';
 import { SobrepageComponent } from './features/sobrepage/sobrepage.component';
-import { CursospageComponent } from './features/cursospage/cursospage.component';
 import { ContatopageComponent } from './features/contatopage/contatopage.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
@@ -19,6 +18,9 @@ import { MatDividerModule } from '@angular/material/divider';
 import { ComponenteGaleriaFotosComponent } from './features/homepage/componente-galeria-fotos/componente-galeria-fotos.component';
 import { ComponenteSobreHomeComponent } from './features/homepage/componente-sobre-home/componente-sobre-home.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MvvComponent } from './features/sobrepage/mvv/mvv.component';
+import { AgendeSeuCursoComponent } from './features/sobrepage/agende-seu-curso/agende-seu-curso.component';
+import { CapelaniapageComponent } from './features/capelaniapage/capelaniapage.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +29,14 @@ import { MatGridListModule } from '@angular/material/grid-list';
     FooterComponent,
     HomepageComponent,
     SobrepageComponent,
-    CursospageComponent,
     ContatopageComponent,
     ComponenteCapelaniasComponent,
     ComponenteCursosAgendadosComponent,
     ComponenteGaleriaFotosComponent,
     ComponenteSobreHomeComponent,
+    MvvComponent,
+    AgendeSeuCursoComponent,
+    CapelaniapageComponent,
   ],
   imports: [
     BrowserModule,

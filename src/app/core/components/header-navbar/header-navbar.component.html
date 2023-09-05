@@ -1,11 +1,11 @@
 <header>
   <nav class="container">
-    <a routerLink="/"><img [src]="imagePath"></a>
+    <a routerLink="/"><img [src]="imagePath" alt="Ordem dos Capelães Evangélicos do Brasil"></a>
     <ul>
-      <li><a routerLink="/">Home</a></li>
-      <li><a routerLink="/sobre">Sobre</a></li>
-      <li><a routerLink="/cursos">Cursos</a></li>
-      <li><a routerLink="/contato">Contato</a></li>
+      <li><a routerLink="/" routerLinkActive="ativo" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+      <li><a routerLink="/sobre" routerLinkActive="ativo">Sobre</a></li>
+      <li><a routerLink="/capelania" routerLinkActive="ativo">Capelania</a></li>
+      <li><a routerLink="/contato" routerLinkActive="ativo">Contato</a></li>
     </ul>
   </nav>
 

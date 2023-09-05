@@ -29,9 +29,8 @@ header li a {
   line-height: 1;
   color: #fff;
   text-transform: uppercase;
-  border-bottom: 2px solid transparent;
+  /* border-bottom: 2px solid transparent; */
   padding: 5px 0;
-  transition: 0.2s ease-out;
 }
 
 header li + li {
@@ -39,5 +38,9 @@ header li + li {
 }
 
 header li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.ativo {
   border-bottom: 2px solid #fff;
 }

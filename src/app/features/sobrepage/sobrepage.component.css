@@ -12,48 +12,6 @@ main {
   align-items: center;
 }
 
-.mvv {
-  padding: 4rem 0;
-  background-color: #d90000;
-}
-
-.img-card {
-  width: 32px;
-}
-
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.card-div {
-  padding: 1rem;
-}
-
-.card-div div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-
-.card-title {
-  font-size: 1.5rem;
-  text-align: center;
-  color: #d90000;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.card-content {
-  text-align: center;
-  color: #404a52;
-}
-
-/* Sobre CTA */
-
-.section-cta-agende {
-  background-image: url("../../../assets/images/sobre-page/pagina-cte-sobre.jpg");
+main p {
+  font-style: italic;
 }
