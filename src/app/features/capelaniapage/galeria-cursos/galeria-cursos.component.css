@@ -1,20 +1,24 @@
-.gallery {
+section {
+  background: #DCDDDE;
+  padding: 4rem 0;
+}
+
+.galeria-cursos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
 }
 
-.gallery img {
-  max-width: 580px;
-  border-radius: 5px;
+.galeria-cursos img {
   border: 1px solid #ccc;
   padding: 10px;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
-  .gallery img {
+  .galeria-cursos img {
     max-width: 240px;
   }
 }

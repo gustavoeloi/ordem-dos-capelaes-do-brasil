@@ -1,0 +1,29 @@
+section {
+  padding: 2rem 0;
+}
+
+.capelania-section {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.capelania-section img {
+  max-width: 600px;
+}
+
+.capelania-content h4 {
+  font-size: 1.125rem;
+  color: #75BA1E;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.capelania-content p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #404A52;
+}

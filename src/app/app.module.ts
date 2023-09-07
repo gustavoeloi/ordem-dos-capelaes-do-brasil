@@ -21,6 +21,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MvvComponent } from './features/sobrepage/mvv/mvv.component';
 import { AgendeSeuCursoComponent } from './features/sobrepage/agende-seu-curso/agende-seu-curso.component';
 import { CapelaniapageComponent } from './features/capelaniapage/capelaniapage.component';
+import { CapelaniasComponent } from './features/capelaniapage/capelanias/capelanias.component';
+import { GaleriaCursosComponent } from './features/capelaniapage/galeria-cursos/galeria-cursos.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { CapelaniapageComponent } from './features/capelaniapage/capelaniapage.c
     MvvComponent,
     AgendeSeuCursoComponent,
     CapelaniapageComponent,
+    CapelaniasComponent,
+    GaleriaCursosComponent,
   ],
   imports: [
     BrowserModule,
