@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  align-items: center;
   justify-items: center;
 }
 
@@ -13,8 +12,20 @@
   padding: 10px;
 }
 
+/* Medias Queries */
+
 @media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .gallery img {
     max-width: 240px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .gallery img {
+    width: 300px;
   }
 }

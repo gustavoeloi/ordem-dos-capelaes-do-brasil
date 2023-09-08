@@ -7,7 +7,7 @@ section {
   margin-top: 2rem;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  align-items: baseline;
+  align-items: self-start;
   justify-content: center;
 }
 
@@ -17,7 +17,7 @@ section {
 
 .capelania-content h4 {
   font-size: 1.125rem;
-  color: #75BA1E;
+  color: #75ba1e;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -25,5 +25,37 @@ section {
 .capelania-content p {
   font-size: 0.875rem;
   line-height: 1.5;
-  color: #404A52;
+  color: #404a52;
+}
+
+@media (max-width: 768px) {
+  .capelania-section {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+
+  .capelania-section img {
+    max-width: 300px;
+  }
+
+  .capelania-section h4 {
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .capelania-section {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-items: center;
+  }
+
+  .capelania-section img {
+    max-width: 400px;
+  }
+
+  .capelania-section h4 {
+    text-align: center;
+  }
 }

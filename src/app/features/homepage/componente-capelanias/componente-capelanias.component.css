@@ -39,7 +39,7 @@
   }
 
   .card-capelania {
-    max-width: 300px;
+    width: 100%;
   }
 
   .card-title {
@@ -48,5 +48,17 @@
 
   .card-capelania p {
     font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .card-escolar {
+    grid-column: span 2;
   }
 }

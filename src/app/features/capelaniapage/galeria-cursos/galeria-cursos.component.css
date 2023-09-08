@@ -1,5 +1,5 @@
 section {
-  background: #DCDDDE;
+  background: #dcddde;
   padding: 4rem 0;
 }
 
@@ -19,6 +19,12 @@ section {
 
 @media (max-width: 768px) {
   .galeria-cursos img {
-    max-width: 240px;
+    max-width: 260px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .galeria-cursos img {
+    max-width: 360px;
   }
 }
