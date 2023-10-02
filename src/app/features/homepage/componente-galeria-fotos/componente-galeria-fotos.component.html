@@ -1,11 +1,6 @@
 <section>
   <div class="container">
     <h3>Galeria de Fotos</h3>
-    <div class="gallery">
-      <img [src]="pathFirstImageGaleria" alt="Pastores no altar">
-      <img [src]="pathSecondImageGaleria" alt="Orando por um presidiário">
-      <img [src]="pathThirdImageGaleria" alt="Capelania Escolar">
-      <img [src]="pathFourthImageGaleria" alt="Igreja cheia">
-    </div>
+    <app-carousel [images]="images" [autoSlide]="true"></app-carousel>
   </div>
 </section>

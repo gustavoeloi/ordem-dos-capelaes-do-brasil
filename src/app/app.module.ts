@@ -23,6 +23,7 @@ import { AgendeSeuCursoComponent } from './features/sobrepage/agende-seu-curso/a
 import { CapelaniapageComponent } from './features/capelaniapage/capelaniapage.component';
 import { CapelaniasComponent } from './features/capelaniapage/capelanias/capelanias.component';
 import { GaleriaCursosComponent } from './features/capelaniapage/galeria-cursos/galeria-cursos.component';
+import { CarouselModule } from './shared/carousel/carousel.module';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { GaleriaCursosComponent } from './features/capelaniapage/galeria-cursos/
     MatCardModule,
     MatDividerModule,
     MatGridListModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

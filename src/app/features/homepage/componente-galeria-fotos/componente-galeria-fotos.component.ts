@@ -6,12 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./componente-galeria-fotos.component.css'],
 })
 export class ComponenteGaleriaFotosComponent {
-  pathFirstImageGaleria =
-    '../../../../assets/images/home-page/foto1-galeria.png';
-  pathSecondImageGaleria =
-    '../../../../assets/images/home-page/foto2-galeria.png';
-  pathThirdImageGaleria =
-    '../../../../assets/images/home-page/foto3-galeria.png';
-  pathFourthImageGaleria =
-    '../../../../assets/images/home-page/foto4-galeria.png';
+  images = [
+    {
+      imageSrc: '../assets/images/home-page/foto1-galeria.png',
+      imageAlt: 'Image1',
+    },
+    {
+      imageSrc: '../assets/images/home-page/foto2-galeria.png',
+      imageAlt: 'Image2',
+    },
+    {
+      imageSrc: '../assets/images/home-page/foto3-galeria.png',
+      imageAlt: 'Image1',
+    },
+    {
+      imageSrc: '../assets/images/home-page/foto4-galeria.png',
+      imageAlt: 'Image1',
+    },
+  ];
 }
