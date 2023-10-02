@@ -1,7 +1,13 @@
 <header>
   <nav class="container">
     <a routerLink="/"><img [src]="imagePath" alt="Ordem dos Capelães Evangélicos do Brasil"></a>
-    <ul>
+    <div class="mobile-menu" (click)="addClickEvent()">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+
+    <ul class="nav-list" [ngClass]="{'active': handleClick}" #linkList>
       <li><a routerLink="/" routerLinkActive="ativo" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
       <li><a routerLink="/sobre" routerLinkActive="ativo">Sobre</a></li>
       <li><a routerLink="/capelania" routerLinkActive="ativo">Capelania</a></li>

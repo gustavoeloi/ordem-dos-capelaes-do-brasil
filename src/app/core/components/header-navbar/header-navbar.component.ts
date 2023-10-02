@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class HeaderNavbarComponent {
   imagePath = '../../components/../../../assets/images/oceb-logo-header.png';
+
+  handleClick = false;
+
+  addClickEvent() {
+    if (this.handleClick) {
+      this.handleClick = false;
+    } else {
+      this.handleClick = true;
+    }
+  }
 }

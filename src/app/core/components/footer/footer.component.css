@@ -56,7 +56,9 @@ li {
 }
 
 .redes-sociais li {
-  background: linear-gradient(#bc1313, #d80707);
+  /* background: linear-gradient(#bc1313, #d80707); */
+  background: #23232e;
+
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -66,7 +68,7 @@ li {
 }
 
 .rodape {
-  background-color: #d90000;
+  background: #23232e;
   display: flex;
   justify-content: center;
   align-items: center;
