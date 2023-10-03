@@ -24,7 +24,7 @@ import { CapelaniapageComponent } from './features/capelaniapage/capelaniapage.c
 import { CapelaniasComponent } from './features/capelaniapage/capelanias/capelanias.component';
 import { GaleriaCursosComponent } from './features/capelaniapage/galeria-cursos/galeria-cursos.component';
 import { CarouselModule } from './shared/carousel/carousel.module';
-import { FormularioAtendimentoComponent } from './features/contatopage/formulario-atendimento/formulario-atendimento.component';
+import { FormularioModule } from './features/contatopage/formulario-atendimento/formulario.module';
 
 @NgModule({
   declarations: [
@@ -43,7 +43,6 @@ import { FormularioAtendimentoComponent } from './features/contatopage/formulari
     CapelaniapageComponent,
     CapelaniasComponent,
     GaleriaCursosComponent,
-    FormularioAtendimentoComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,6 +54,7 @@ import { FormularioAtendimentoComponent } from './features/contatopage/formulari
     MatDividerModule,
     MatGridListModule,
     CarouselModule,
+    FormularioModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
