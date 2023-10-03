@@ -1,28 +1,28 @@
-<form action="">
+<form (ngSubmit)="onSubmit()" action="" [formGroup]="form">
   <div class="form-nome campo">
     <label for="">Nome</label>
-    <input type="text">
+    <input type="text" formControlName="nome">
   </div>
 
   <div class="form-email campo">
     <label for="">E-mail</label>
-    <input type="email">
+    <input type="email" formControlName="email">
   </div>
 
   <div class="form-select campo">
     <label for="">Motivo do Contato</label>
-    <select name="select" id="">
+    <select name="select" id="" formControlName="motivo">
       <option value="" disabled selected></option>
-      <option value="">Curso</option>
-      <option value="">Renovação</option>
-      <option value="">Dúvidas</option>
+      <option value="curso">Curso</option>
+      <option value="renovacao">Renovação</option>
+      <option value="duvida">Dúvidas</option>
     </select>
   </div>
 
   <div class="form-mensagem campo">
     <label for="">Mensagem</label>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <textarea name="" id="" cols="30" rows="10" formControlName="mensagem"></textarea>
   </div>
 
-  <button class="btn-form">Enviar</button>
+  <button class="btn-form" type="submit">Enviar</button>
 </form>
