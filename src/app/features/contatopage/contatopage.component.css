@@ -57,3 +57,37 @@
   grid-template-columns: 1fr 1fr;
   gap: 1.2rem;
 }
+
+/* Section infos formulário */
+
+.info-form-title {
+  font-size: 1.5rem;
+  color: #404a52;
+}
+
+.formulario-info-right p {
+  font-size: 0.875rem;
+  font-style: italic;
+  text-align: justify;
+  line-height: 1.3;
+  color: #404a52;
+}
+
+@media (max-width: 1300px) {
+  .container-contato {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container-contato > div p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .whatsapp-card img {
+    width: 75px;
+  }
+}
