@@ -5,14 +5,16 @@
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Usar auto-fit para ajustar automaticamente o número de colunas */
   gap: 1rem;
-  align-items: center;
   justify-items: center;
 }
 
 .card-cursos-agendados {
-  max-width: 370px;
+  max-width: 100%; /* Permitir que os cartões se ajustem à largura da coluna */
 }
 
 .section-cursos-agendados h3 {
@@ -21,10 +23,10 @@
 
 @media (max-width: 768px) {
   .card-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr); /* Uma coluna em telas menores */
   }
 
   .card-cursos-agendados {
-    max-width: 300px;
+    max-width: 100%; /* Permitir que os cartões ocupem toda a largura da tela */
   }
 }

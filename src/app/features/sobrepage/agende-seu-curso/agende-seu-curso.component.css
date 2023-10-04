@@ -3,16 +3,16 @@
     no-repeat center center;
   background-size: cover;
   color: #fff;
-}
-
-.agende-seu-curso {
+  text-align: center; /* Centralizar o conteúdo */
   padding: 4rem 0;
-}
-
-.agende-seu-curso p {
-  text-align: center;
 }
 
 .title-agende-seu-curso {
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .agende-seu-curso {
+    padding: 2rem 0; /* Reduzir o espaçamento em telas menores */
+  }
 }
