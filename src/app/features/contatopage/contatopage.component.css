@@ -73,6 +73,17 @@
   color: #404a52;
 }
 
+.contato-mapa {
+  padding: 2rem 0;
+}
+
+.contato-mapa p {
+  text-align: center;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #404a52;
+}
+
 @media (max-width: 1300px) {
   .container-contato {
     grid-template-columns: 1fr;

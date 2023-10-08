@@ -1,6 +1,6 @@
+import { CursoService } from './../../../services/curso.service';
 import { Component, OnInit } from '@angular/core';
-import { Cursos } from './Cursos';
-import { MockserviceService } from 'src/app/services/mockservice.service';
+import { Curso } from 'src/app/models/Curso';
 
 @Component({
   selector: 'app-componente-cursos-agendados',
@@ -8,11 +8,13 @@ import { MockserviceService } from 'src/app/services/mockservice.service';
   styleUrls: ['./componente-cursos-agendados.component.css'],
 })
 export class ComponenteCursosAgendadosComponent implements OnInit {
-  cursos: Cursos[] = [];
+  cursos: Curso[] = [];
 
-  constructor(private cursoMockService: MockserviceService) {}
+  constructor(private cursoService: CursoService) {}
 
   ngOnInit(): void {
-    this.cursos = this.cursoMockService.getCursos();
+    this.cursoService.listarCursos().subscribe((cursos) => {
+      this.cursos = cursos;
+    });
   }
 }

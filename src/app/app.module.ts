@@ -25,6 +25,7 @@ import { CapelaniasComponent } from './features/capelaniapage/capelanias/capelan
 import { GaleriaCursosComponent } from './features/capelaniapage/galeria-cursos/galeria-cursos.component';
 import { CarouselModule } from './shared/carousel/carousel.module';
 import { FormularioModule } from './features/contatopage/formulario-atendimento/formulario.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { FormularioModule } from './features/contatopage/formulario-atendimento/
     MatGridListModule,
     CarouselModule,
     FormularioModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
