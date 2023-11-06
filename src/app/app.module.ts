@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule, DatePipe } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +27,19 @@ import { GaleriaCursosComponent } from './features/capelaniapage/galeria-cursos/
 import { CarouselModule } from './shared/carousel/carousel.module';
 import { FormularioModule } from './features/contatopage/formulario-atendimento/formulario.module';
 import { HttpClientModule } from '@angular/common/http';
+import { CursosAgendadosComponent } from './features/interface-curso/cursos-agendados/cursos-agendados.component';
+import { FormularioCursoComponent } from './features/interface-curso/formulario-curso/formulario-curso.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MAT_DATE_LOCALE } from '@angular/material/core';
+import { SharedModule } from './shared/shared.module';
+import { ConfirmDialogComponent } from './features/interface-curso/cursos-agendados/confirm-dialog/confirm-dialog.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +58,9 @@ import { HttpClientModule } from '@angular/common/http';
     CapelaniapageComponent,
     CapelaniasComponent,
     GaleriaCursosComponent,
+    CursosAgendadosComponent,
+    FormularioCursoComponent,
+    ConfirmDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,8 +74,18 @@ import { HttpClientModule } from '@angular/common/http';
     CarouselModule,
     FormularioModule,
     HttpClientModule,
+    MatDialogModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    ReactiveFormsModule,
+    MatSnackBarModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    CommonModule,
+    SharedModule,
   ],
-  providers: [],
+  providers: [DatePipe, { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

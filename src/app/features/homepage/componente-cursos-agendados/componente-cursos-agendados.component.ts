@@ -1,6 +1,8 @@
 import { CursoService } from './../../../services/curso.service';
 import { Component, OnInit } from '@angular/core';
-import { Curso } from 'src/app/models/Curso';
+import { Observable } from 'rxjs';
+import { Curso } from 'src/app/model/Curso';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-componente-cursos-agendados',
@@ -8,13 +10,15 @@ import { Curso } from 'src/app/models/Curso';
   styleUrls: ['./componente-cursos-agendados.component.css'],
 })
 export class ComponenteCursosAgendadosComponent implements OnInit {
-  cursos: Curso[] = [];
+  cursos: Observable<Curso[]>;
 
-  constructor(private cursoService: CursoService) {}
-
-  ngOnInit(): void {
-    this.cursoService.listarCursos().subscribe((cursos) => {
-      this.cursos = cursos;
-    });
+  constructor(private cursoService: CursoService, private datePipe: DatePipe) {
+    this.cursos = this.cursoService.listarCursos();
   }
+
+  formatarData(data: Date): string {
+    return this.datePipe.transform(data, 'dd/MM/yyyy') || '';
+  }
+
+  ngOnInit(): void {}
 }

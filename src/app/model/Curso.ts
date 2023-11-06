@@ -1,10 +1,13 @@
 export interface Curso {
+  id?: string;
   uf: string;
   cidade: string;
   local: string;
   horario: string;
   valor: number;
-  data: Date;
+  dataCurso: Date;
   responsavel: string;
-  numeroResponsavel: string;
+  telefoneResponsavel: string;
+  descricao: string;
+  criadoEm?: string;
 }

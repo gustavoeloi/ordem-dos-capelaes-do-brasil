@@ -1,6 +1,33 @@
-.section-cursos-agendados {
-  padding: 3rem 0;
-  background: #dcddde;
+main {
+  height: 400px;
+  margin-top: 80px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(23, 23, 68);
+}
+
+/* SeuComponente.component.scss */
+
+.adicionar-curso {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.custom-button {
+  background-color: #ff5722; /* Cor de fundo personalizada */
+  color: #fff; /* Cor do texto personalizada */
+  border: none; /* Remova a borda */
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #08e66c; /* Cor de fundo personalizada ao passar o mouse */
 }
 
 .card-container {
@@ -13,14 +40,13 @@
   justify-items: center;
 }
 
-.card-cursos-agendados {
-  max-width: 100%; /* Permitir que os cartões se ajustem à largura da coluna */
-  margin: 16px;
-  padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  transition: box-shadow 0.3s;
+.cursos-agendados {
+  padding: 2rem 0;
+}
+
+.div-icon {
+  display: flex;
+  align-items: center;
 }
 
 .div-icon mat-icon {

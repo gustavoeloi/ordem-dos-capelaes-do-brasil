@@ -1,0 +1,62 @@
+<form [formGroup]="formulario" (ngSubmit)="saveCurso()">
+  <h1 matDialogTitle>Adicionar um curso</h1>
+  <div mat-dialog-content>
+    <mat-form-field>
+      <mat-label>Estado</mat-label>
+      <mat-select formControlName="uf">
+        <mat-option *ngFor="let uf of ufs" [value]="uf.sigla">
+          {{uf.nome}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Cidade</mat-label>
+      <input matInput formControlName="cidade">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Local</mat-label>
+      <input matInput formControlName="local">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Horário</mat-label>
+      <input matInput formControlName="horario" placeholder="exemplo: 08h às 14h">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Valor</mat-label>
+      <input matInput formControlName="valor">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Selecione a data</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="dataCurso">
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Responsável</mat-label>
+      <input matInput formControlName="responsavel">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Telefone</mat-label>
+      <input matInput formControlName="telefoneResponsavel" placeholder="(XX) XXXXX-XXXX">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Descrição</mat-label>
+      <textarea matInput formControlName="descricao"></textarea>
+    </mat-form-field>
+  </div>
+
+  <div mat-dialog-actions>
+    <button mat-raised-button color="primary" type="submit">Salvar</button>
+    <button mat-raised-button matDialogClose color="warn">Cancelar</button>
+    <!-- <button mat-raised-button matDialogClose color="accent">Fechar</button> -->
+
+  </div>
+</form>
